@@ -14,14 +14,12 @@ using IntMap = System.Collections.Generic.Dictionary<string, int>;
 
 namespace cs_word_count
 {
-	class Program
-	{
+	class Program {
 		// main function
 		static void Main(string[] args) {
 			IntMap count = new IntMap();
 			StringMap argm = GetArgs(args);
-			try
-			{
+			try {
 				StreamReader file = new StreamReader(argm[""]);
 				Regex find = new Regex(argm.ContainsKey("-p") ? argm["-p"] : @"\w+");
 				CountInFile(count, find, file);
