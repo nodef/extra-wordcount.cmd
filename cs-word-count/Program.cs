@@ -1,9 +1,8 @@
-﻿// required modules
+﻿/* PROGRAM - main program */
 using System;
 using System.IO;
 using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -25,7 +24,7 @@ namespace cs_word_count
 				CountInFile(count, find, file);
 				ListCounts(count);
 			}
-			catch (Exception) { Console.WriteLine("word-count [-p <regex pattern>] <source file>"); }
+			catch (Exception) { Console.WriteLine(GetHelp()); }
 		}
 
 		// display word counts
@@ -60,6 +59,14 @@ namespace cs_word_count
 				opt = args[i];
 			}
 			return o;
+		}
+
+		// get usage help
+		static string GetHelp() {
+			StringBuilder str = new StringBuilder("word-count [-p <regex pattern>] <source file>\n");
+			str.Append("-p : specify regex pattern for items/words to be counted\n");
+			str.Append("     (e.g. -p gl\\w+, to look for gl calls in adb logs)\n");
+			return str.ToString();
 		}
 	}
 }
