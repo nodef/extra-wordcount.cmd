@@ -1,6 +1,6 @@
 # cs-word-count
 
-Count words in a file, and list them in descending order.
+Use this program to **count words** in a *file*, and *list* them in **descending** *order*.
 
 
 ## usage
