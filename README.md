@@ -1,4 +1,4 @@
-# cs-word-count
+# wordcount
 
 Use this program to **count words** in a *file*, and *list* them in **descending** *order*.
 
