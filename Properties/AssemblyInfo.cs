@@ -5,19 +5,19 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("cs-word-count")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("extra-wordcount")]
+[assembly: AssemblyDescription("Count words in a file, and list them in descending order in Windows Console.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Qualcomm Incorporated")]
-[assembly: AssemblyProduct("cs-word-count")]
-[assembly: AssemblyCopyright("Copyright © Qualcomm Incorporated 2016")]
+[assembly: AssemblyCompany("Merferry")]
+[assembly: AssemblyProduct("extra-wordcount")]
+[assembly: AssemblyCopyright("Copyright (C) Merferry 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("64cebef3-074b-436e-a632-b36c19adafd9")]

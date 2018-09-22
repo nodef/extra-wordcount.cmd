@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 using StringMap = System.Collections.Generic.Dictionary<string, string>;
 using IntMap = System.Collections.Generic.Dictionary<string, int>;
 
-namespace cs_word_count
+namespace App
 {
 	class Program {
 		// main function
@@ -63,7 +63,7 @@ namespace cs_word_count
 
 		// get usage help
 		static string GetHelp() {
-			StringBuilder str = new StringBuilder("word-count [-p <regex pattern>] <source file>\n");
+			StringBuilder str = new StringBuilder("ewordcount [-p <regex pattern>] <source file>\n");
 			str.Append("-p : specify regex pattern for items/words to be counted\n");
 			str.Append("     (e.g. -p gl\\w+, to look for gl calls in adb logs)\n");
 			return str.ToString();

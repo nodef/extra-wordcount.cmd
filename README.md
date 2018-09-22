@@ -1,55 +1,25 @@
-# wordcount
-
-Use this program to **count words** in a *file*, and *list* them in **descending** *order*.
-
-
-## usage
-
-- Download [word-count](#).
-- Drop it in your *directory*.
-- If you want it to be usable from **anywhere**, add its path to the `PATH` *environment variable*.
-- Start a *command prompt* in the **same** *directory*.
-- Follow the [examples](#examples) or the [reference](#reference).
+Count words in a file, and list them in descending order in Windows Console.
+> 1. Download [exe file](https://github.com/winp/extra-bel/releases/download/1.0.0/ebel.cmd).
+> 2. Copy to `C:\Program_Files\Scripts`.
+> 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
 
-## examples
-
-* Get all words count
 ```batch
-word-count ideas.txt
+ewordcount [-p <regex pattern>] <source file>
+:: -p : specify regex pattern for items/words to be counted
+::      (e.g. -p gl\w+, to look for gl calls in adb logs)
+```
+
+```batch
+:: Get all words count
+ewordcount ideas.txt
 : (word counts are displayed)
-```
 
-* Get all words count to file
-```batch
-word-count project.txt > project-count.log
+:: Get all words count to file
+ewordcount project.txt > project-count.log
 : (word counts stored in "project-count.log")
-```
 
-* Get Specific words count
-```batch
-word-count -p gl\w+ adb.log > adb-count.log
+:: Get Specific words count
+ewordcount -p gl\w+ adb.log > adb-count.log
 : (counts of word starting with "gl" is only stored)
 ```
-
-
-## reference
-
-```
-word-count [-p <regex pattern>] <source file>
--p : specify regex pattern for items/words to be counted
-     (e.g. -p gl\w+, to look for gl calls in adb logs)
-```
-
-
-## objective
-
-The objective of this project is to provide a mechanism to know
-the most used function in a library for a use case, so as to be
-able to find the best places to start optimizing.
-
-
-## thanks
-
-[Stack Overflow](http://stackoverflow.com) for a lot of QAs <br>
-[Microsoft MSDN](https://msdn.microsoft.com) for the huge support in every direction <br>
