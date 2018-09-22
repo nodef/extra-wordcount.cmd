@@ -1,5 +1,5 @@
 Count words in a file, and list them in descending order in Windows Console.
-> 1. Download [exe file](https://github.com/winp/extra-bel/releases/download/1.0.0/ebel.cmd).
+> 1. Download [exe file](https://github.com/winp/extra-wordcount/releases/download/1.0.0/ewordcount.exe).
 > 2. Copy to `C:\Program_Files\Scripts`.
 > 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
