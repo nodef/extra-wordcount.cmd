@@ -23,3 +23,6 @@ ewordcount project.txt > project-count.log
 ewordcount -p gl\w+ adb.log > adb-count.log
 : (counts of word starting with "gl" is only stored)
 ```
+
+
+[![Merferry](https://i.imgur.com/ApzHpHZ.jpg)](https://merferry.github.io)
