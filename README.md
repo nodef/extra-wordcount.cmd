@@ -1,5 +1,5 @@
 Count words in a file, and list them in descending order in Windows Console.
-> 1. Download [exe file](https://github.com/winp/extra-wordcount/releases/download/1.0.0/ewordcount.exe).
+> 1. Download [exe file](https://github.com/cmdf/extra-wordcount/releases/download/1.0.0/ewordcount.exe).
 > 2. Copy to `C:\Program_Files\Scripts`.
 > 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
@@ -25,4 +25,4 @@ ewordcount -p gl\w+ adb.log > adb-count.log
 ```
 
 
-[![Merferry](https://i.imgur.com/ApzHpHZ.jpg)](https://merferry.github.io)
+[![cmdf](https://i.imgur.com/ApzHpHZ.jpg)](https://cmdf.github.io)
